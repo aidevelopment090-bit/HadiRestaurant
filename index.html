@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HADI Restaurant | Modern Fine Dining & Luxury Lounge</title>
+    <meta name="description" content="Experience royal gastronomy at HADI Restaurant. Exquisite flavors, artisanal culinary arts, luxury ambiance, online food ordering, and bespoke WhatsApp table reservations.">
+    <meta name="keywords" content="HADI Restaurant, fine dining, luxury restaurant, halal gourmet, steaks, chef specials, table reservation, online food ordering">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Notification Toast Container -->
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-item">
+                <i class="fa-solid fa-crown text-gold"></i>
+                <span>Michelin-Inspired Halal Gastronomy & Artisanal Grill</span>
+            </div>
+            <div class="top-bar-contact">
+                <a href="tel:+12345678900"><i class="fa-solid fa-phone text-gold"></i> +1 (234) 567-8900</a>
+                <span class="divider">|</span>
+                <span><i class="fa-regular fa-clock text-gold"></i> Mon - Sun: 12:00 PM - 12:00 AM</span>
+                <span class="divider">|</span>
+                <a href="#reservation" class="top-book-link"><i class="fa-brands fa-whatsapp text-gold"></i> Instant WhatsApp VIP Desk</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Modern Navigation -->
+    <header id="main-header" class="header">
+        <div class="container header-container">
+            <!-- Brand Logo -->
+            <a href="#home" class="brand-logo" aria-label="HADI Restaurant Home">
+                <div class="logo-symbol">
+                    <span class="gold-monogram">H</span>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-name">HADI</span>
+                    <span class="brand-subtitle">FINE DINING & LOUNGE</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Quick Action Buttons -->
+            <div class="header-actions">
+                <!-- Cart Trigger Button -->
+                <button id="cart-btn" class="icon-action-btn" aria-label="View Food Order Cart" title="Online Food Order Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-count-badge" class="badge">0</span>
+                </button>
+
+                <!-- Book Table CTA -->
+                <a href="#reservation" class="btn btn-gold btn-sm d-none-mobile">
+                    <span>Reserve Table</span>
+                    <i class="fa-solid fa-calendar-check"></i>
+                </a>
+
+                <!-- Mobile Hamburger Toggle -->
+                <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-drawer" class="mobile-drawer">
+        <div class="mobile-drawer-header">
+            <div class="logo-text">
+                <span class="brand-name">HADI</span>
+                <span class="brand-subtitle">FINE DINING & LOUNGE</span>
+            </div>
+            <button id="close-drawer-btn" class="close-drawer-btn" aria-label="Close Navigation">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+            <li><a href="#menu" class="mobile-nav-link">Menu & Order</a></li>
+            <li><a href="#experience" class="mobile-nav-link">The Experience</a></li>
+            <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact & Location</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+            <a href="#reservation" class="btn btn-gold btn-block mb-3">
+                <i class="fa-solid fa-calendar-check"></i> Book a Table
+            </a>
+            <a href="https://wa.me/12345678900?text=Hello%20HADI%20Restaurant,%20I%20would%20like%20to%20reserve%20a%20table." target="_blank" rel="noopener noreferrer" class="btn btn-outline-whatsapp btn-block">
+                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+            <div class="mobile-drawer-contact">
+                <p><i class="fa-solid fa-location-dot text-gold"></i> 742 Royal Palm Blvd, Downtown</p>
+                <p><i class="fa-solid fa-phone text-gold"></i> +1 (234) 567-8900</p>
+            </div>
+        </div>
+    </div>
+    <div id="drawer-backdrop" class="drawer-backdrop"></div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-floating-particles" aria-hidden="true"></div>
+            
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-pill-badge">
+                        <i class="fa-solid fa-gem text-gold"></i>
+                        <span>An Epiphany of Royal Gastronomy</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Where Culinary Mastery <br>
+                        Meets <span class="gold-gradient-text">Pure Luxury</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Indulge in an extraordinary sensory journey at HADI Restaurant. We harmonize authentic culinary heritage with modern avant-garde innovation, featuring prime dry-aged cuts, bespoke saffron infusions, and gold-leaf artisanal delicacies.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#reservation" class="btn btn-gold btn-lg">
+                            <span>Reserve Your Table</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#menu" class="btn btn-glass btn-lg">
+                            <span>Explore Menu & Order</span>
+                            <i class="fa-solid fa-utensils"></i>
+                        </a>
+                        <a href="https://wa.me/12345678900?text=Hello%20HADI%20Restaurant,%20I%20would%20like%20to%20inquire%20about%20a%20VIP%20reservation." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-hero" title="Direct WhatsApp Reservation">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>WhatsApp Concierge</span>
+                        </a>
+                    </div>
+
+                    <!-- Hero Quick Stats / Badges -->
+                    <div class="hero-stats-strip">
+                        <div class="hero-stat-item">
+                            <span class="stat-number">4.9 <i class="fa-solid fa-star text-gold"></i></span>
+                            <span class="stat-label">2,400+ Connoisseur Reviews</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="hero-stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Certified Prime Halal Ingredients</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="hero-stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">International Culinary Accolades</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Showcase Card -->
+                <div class="hero-showcase">
+                    <div class="showcase-card">
+                        <div class="showcase-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="HADI Signature Gold Tomahawk Steak" class="showcase-image" fetchpriority="high">
+                            <span class="exclusive-tag"><i class="fa-solid fa-crown"></i> Chef's Masterpiece</span>
+                        </div>
+                        <div class="showcase-body">
+                            <div class="showcase-meta">
+                                <span class="dish-course">Signature Entrée</span>
+                                <span class="dish-rating"><i class="fa-solid fa-star text-gold"></i> 5.0</span>
+                            </div>
+                            <h3 class="showcase-dish-title">Royal 24K Gold Tomahawk</h3>
+                            <p class="showcase-dish-desc">45-day dry-aged Australian Wagyu M9+, crusted with edible 24K gold leaf, black winter truffle jus, and smoked rosemary butter.</p>
+                            <div class="showcase-footer">
+                                <span class="showcase-price">$185.00</span>
+                                <button class="btn btn-gold btn-sm quick-add-btn" data-id="spec-1" data-name="Royal 24K Gold Tomahawk" data-price="185" data-img="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80">
+                                    <i class="fa-solid fa-plus"></i> Order Online
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <a href="#about" class="scroll-down-indicator" aria-label="Scroll down to About Us section">
+                <span class="scroll-text">DISCOVER MORE</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- ABOUT US SECTION -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-heading">THE HERITAGE OF EXCELLENCE</span>
+                    <h2 class="section-title">The Story Behind <span class="gold-gradient-text">HADI</span></h2>
+                    <div class="gold-divider">
+                        <span class="line"></span>
+                        <i class="fa-solid fa-crown"></i>
+                        <span class="line"></span>
+                    </div>
+                    <p class="section-intro">
+                        Born from a reverence for majestic imperial hospitality and contemporary culinary artistry, HADI delivers an atmosphere where every dinner is an unforgettable celebration.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- About Visuals with Gold Accents -->
+                    <div class="about-visuals">
+                        <div class="image-stack">
+                            <div class="image-box primary-image-box">
+                                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="HADI Restaurant Grand Dining Hall" class="about-img main-img" loading="lazy">
+                                <div class="gold-frame-accent"></div>
+                            </div>
+                            <div class="image-box secondary-image-box">
+                                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=700&q=80" alt="Executive Chef Hadi Preparing Signature Dish" class="about-img chef-img" loading="lazy">
+                                <div class="chef-badge-overlay">
+                                    <i class="fa-solid fa-medal text-gold"></i>
+                                    <div>
+                                        <strong>Chef Hadi Al-Mansoor</strong>
+                                        <span>Master Culinary Director</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience Badge -->
+                            <div class="experience-counter-badge">
+                                <span class="exp-number">20+</span>
+                                <span class="exp-text">Years of Royal Hospitality</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About Narrative & Pillars -->
+                    <div class="about-content">
+                        <div class="philosophy-quote">
+                            <i class="fa-solid fa-quote-left text-gold quote-icon"></i>
+                            <blockquote>
+                                "We don't merely serve food; we choreograph memories, sculpt sensations, and elevate every plate into a tapestry of imperial flavor and warmth."
+                            </blockquote>
+                            <cite>— Executive Chef & Founder, Hadi Al-Mansoor</cite>
+                        </div>
+
+                        <div class="pillars-list">
+                            <div class="pillar-card">
+                                <div class="pillar-icon">
+                                    <i class="fa-solid fa-fire-burner"></i>
+                                </div>
+                                <div class="pillar-info">
+                                    <h4>Artisanal Woodfire & Dry-Aging</h4>
+                                    <p>Our custom Himalayan salt curing room and custom charcoal grills impart an unmistakable depth and tenderness to all our cuts.</p>
+                                </div>
+                            </div>
+
+                            <div class="pillar-card">
+                                <div class="pillar-icon">
+                                    <i class="fa-solid fa-leaf"></i>
+                                </div>
+                                <div class="pillar-info">
+                                    <h4>Uncompromised 100% Halal Integrity</h4>
+                                    <p>Every ingredient, oil, meat, and seasonal garnish is meticulously traced and certified to the highest standards of purity.</p>
+                                </div>
+                            </div>
+
+                            <div class="pillar-card">
+                                <div class="pillar-icon">
+                                    <i class="fa-solid fa-champagne-glasses"></i>
+                                </div>
+                                <div class="pillar-info">
+                                    <h4>Private VIP Salons & Bespoke Ambience</h4>
+                                    <p>Discreet private dining suites equipped with personal butler service, custom acoustic soundscapes, and gold tableware.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-actions">
+                            <a href="#experience" class="btn btn-outline-gold">
+                                <span>Discover Our Experience</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="#reservation" class="btn btn-gold">
+                                <span>Reserve a VIP Salon</span>
+                                <i class="fa-solid fa-couch"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Numbers Counter Row -->
+                <div class="stats-counter-section">
+                    <div class="stat-card">
+                        <i class="fa-solid fa-utensils stat-icon"></i>
+                        <span class="stat-value" data-target="48">48+</span>
+                        <span class="stat-title">Artisanal Menu Creations</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-award stat-icon"></i>
+                        <span class="stat-value" data-target="18">18</span>
+                        <span class="stat-title">International Dining Honors</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-users stat-icon"></i>
+                        <span class="stat-value" data-target="98">98.9%</span>
+                        <span class="stat-title">Guest Satisfaction Index</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-clock stat-icon"></i>
+                        <span class="stat-value" data-target="365">365</span>
+                        <span class="stat-title">Days of Passion & Service</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU SECTION & ONLINE ORDERING -->
+        <section id="menu" class="menu-section section-padding bg-darker">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-heading">A GASTRONOMIC SYMPHONY</span>
+                    <h2 class="section-title">The Culinary <span class="gold-gradient-text">Menu</span></h2>
+                    <div class="gold-divider">
+                        <span class="line"></span>
+                        <i class="fa-solid fa-utensils"></i>
+                        <span class="line"></span>
+                    </div>
+                    <p class="section-intro">
+                        Curated with the finest seasonal delicacies, world-class prime meats, and delicate Mediterranean and Middle Eastern spices. Click <strong>"Add to Order"</strong> to build your cart for direct pickup or WhatsApp delivery!
+                    </p>
+                </div>
+
+                <!-- Menu Categories Filter Tabs -->
+                <div class="menu-filter-container">
+                    <div class="menu-filter-tabs" role="tablist">
+                        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+                            <i class="fa-solid fa-border-all"></i> All Offerings
+                        </button>
+                        <button class="filter-btn" data-filter="starters" role="tab" aria-selected="false">
+                            <i class="fa-solid fa-plate-wheat"></i> Mezze & Starters
+                        </button>
+                        <button class="filter-btn" data-filter="mains" role="tab" aria-selected="false">
+                            <i class="fa-solid fa-drumstick-bite"></i> Royal Mains
+                        </button>
+                        <button class="filter-btn" data-filter="steaks" role="tab" aria-selected="false">
+                            <i class="fa-solid fa-fire"></i> Charcoal & Steaks
+                        </button>
+                        <button class="filter-btn" data-filter="specials" role="tab" aria-selected="false">
+                            <i class="fa-solid fa-crown"></i> Chef Signatures
+                        </button>
+                        <button class="filter-btn" data-filter="desserts" role="tab" aria-selected="false">
+                            <i class="fa-solid fa-cake-candles"></i> Gold Desserts
+                        </button>
+                        <button class="filter-btn" data-filter="beverages" role="tab" aria-selected="false">
+                            <i class="fa-solid fa-glass-water-droplet"></i> Mocktails & Tea
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Menu Cards Grid -->
+                <div class="menu-items-grid" id="menu-items-grid">
+                    <!-- Item 1: Starter -->
+                    <div class="menu-card" data-category="starters">
+                        <div class="menu-card-image">
+                            <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=700&q=80" alt="Saffron & Truffle Hummus" loading="lazy">
+                            <span class="menu-badge badge-signature">Chef's Choice</span>
+                            <span class="dietary-tag" title="100% Halal & Vegetarian"><i class="fa-solid fa-seedling"></i> Veg</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-top">
+                                <h3 class="menu-item-title">Saffron Truffle Hummus</h3>
+                                <span class="menu-item-price">$24.00</span>
+                            </div>
+                            <p class="menu-item-desc">Silky chickpea purée infused with Persian saffron, shavings of black Périgord truffle, toasted pine nuts, and warm gold-dusted sesame lavash.</p>
+                            <div class="menu-card-bottom">
+                                <span class="calories-info"><i class="fa-solid fa-fire-flame-curved"></i> 320 kcal</span>
+                                <button class="btn btn-sm btn-gold add-to-cart-btn" data-id="m-1" data-name="Saffron Truffle Hummus" data-price="24" data-img="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=600&q=80">
+                                    <i class="fa-solid fa-plus"></i> Add to Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Starter -->
+                    <div class="menu-card" data-category="starters">
+                        <div class="menu-card-image">
+                            <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=700&q=80" alt="Crispy Calamari & Spiced Aioli" loading="lazy">
+                            <span class="dietary-tag" title="Seafood Delicacy"><i class="fa-solid fa-fish"></i> Seafood</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-top">
+                                <h3 class="menu-item-title">Crispy Mediterranean Calamari</h3>
+                                <span class="menu-item-price">$28.00</span>
+                            </div>
+                            <p class="menu-item-desc">Golden crisp tender squid coated in sumac spice blend, served with smoked saffron emulsion, pickled chili pearls, and charred Meyer lemon.</p>
+                            <div class="menu-card-bottom">
+                                <span class="calories-info"><i class="fa-solid fa-fire-flame-curved"></i> 410 kcal</span>
+                                <button class="btn btn-sm btn-gold add-to-cart-btn" data-id="m-2" data-name="Crispy Mediterranean Calamari" data-price="28" data-img="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=600&q=80">
+                                    <i class="fa-solid fa-plus"></i> Add to Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Main -->
+                    <div class="menu-card" data-category="mains">
+                        <div class="menu-card-image">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="Slow-Braised Royal Lamb Shank" loading="lazy">
+                            <span class="menu-badge badge-signature">Guest Favorite</span>
+                            <span class="dietary-tag" title="Halal Certified"><i class="fa-solid fa-shield-halved"></i> Halal</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-top">
+                                <h3 class="menu-item-title">Royal Braised Lamb Shank</h3>
+                                <span class="menu-item-price">$54.00</span>
+                            </div>
+                            <p class="menu-item-desc">12-hour slow-cooked grass-fed shank braised in cardamom, cinnamon & date reduction. Accompanied by jeweled saffron basmati and pomegranate pearls.</p>
+                            <div class="menu-card-bottom">
+                                <span class="calories-info"><i class="fa-solid fa-fire-flame-curved"></i> 780 kcal</span>
+                                <button class="btn btn-sm btn-gold add-to-cart-btn" data-id="m-3" data-name="Royal Braised Lamb Shank" data-price="54" data-img="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80">
+                                    <i class="fa-solid fa-plus"></i> Add to Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Steaks -->
+                    <div class="menu-card" data-category="steaks">
+                        <div class="menu-card-image">
+                            <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=700&q=80" alt="Wagyu Ribeye Steak" loading="lazy">
+                            <span class="menu-badge badge-bestseller">Prime Cut</span>
+                            <span class="dietary-tag"><i class="fa-solid fa-shield-halved"></i> Halal M9+</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-top">
+                                <h3 class="menu-item-title">Imperial Wagyu Ribeye M9+</h3>
+                                <span class="menu-item-price">$95.00</span>
+                            </div>
+                            <p class="menu-item-desc">12oz prime cut grilled over Japanese white oak binchotan charcoal. Served with roasted bone marrow butter, confit garlic, and smoked Maldon salt.</p>
+                            <div class="menu-card-bottom">
+                                <span class="calories-info"><i class="fa-solid fa-fire-flame-curved"></i> 890 kcal</span>
+                                <button class="btn btn-sm btn-gold add-to-cart-btn" data-id="m-4" data-name="Imperial Wagyu Ribeye M9+" data-price="95" data-img="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80">
+                                    <i class="fa-solid fa-plus"></i> Add to Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Steaks -->
+                    <div class="menu-card" data-category="steaks">
+                        <div class="menu-card-image">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="Royal 24K Gold Tomahawk" loading="lazy">
+                            <span class="menu-badge badge-gold">24K Gold</span>
+                            <span class="dietary-tag"><i class="fa-solid fa-crown"></i> Masterpiece</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-top">
+                                <h3 class="menu-item-title">Royal 24K Gold Tomahawk</h3>
+                                <span class="menu-item-price">$185.00</span>
+                            </div>
+                            <p class="menu-item-desc">38oz colossal bone-in Wagyu ribeye wrapped entirely in certified edible 24-karat gold leaves. Carved tableside with black truffle glaze.</p>
+                            <div class="menu-card-bottom">
+                                <span class="calories-info"><i class="fa-solid fa-fire-flame-curved"></i> 1420 kcal (Serves 2-3)</span>
+                                <button class="btn btn-sm btn-gold add-to-cart-btn" data-id="spec-1" data-name="Royal 24K Gold Tomahawk" data-price="185" data-img="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80">
+                                    <i class="fa-solid fa-plus"></i> Add to Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Mains -->
+                    <div class="menu-card" data-category="mains">
+                        <div class="menu-card-image">
+                            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=700&q=80" alt="Pan-Seared Chilean Seabass" loading="lazy">
+                            <span class="dietary-tag" title="Seafood Delicacy"><i class="fa-solid fa-fish"></i> Wild-Caught</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-top">
+                                <h3 class="menu-item-title">Glazed Chilean Seabass</h3>
+                                <span class="menu-item-price">$62.00</span>
+                            </div>
+                            <p class="menu-item-desc">Sustainable Chilean seabass pan-seared with pomegranate molasses glaze, served over edamame-mint velvet, saffron potato fondant, and citrus foam.</p>
+                            <div class="menu-card-bottom">
+                                <span class="calories-info"><i class="fa-solid fa-fire-flame-curved"></i> 520 kcal</span>
+                                <button class="btn btn-sm btn-gold add-to-cart-btn" data-id="m-6" data-name="Glazed Chilean Seabass" data-price="62" data-img="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80">
+                                    <i class="fa-solid fa-plus"></i> Add to Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 7: Specials -->
+                    <div class="menu-card" data-category="specials">
+                        <div class="menu-card-image">
+                            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=700&q=80" alt="HADI Saffron Lobster Risotto" loading="lazy">
+                            <span class="menu-badge badge-signature">Chef Signature</span>
+                            <span class="dietary-tag"><i class="fa-solid fa-star"></i> Imperial</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-top">
+                                <h3 class="menu-item-title">Saffron Butter Lobster Tail</h3>
+                                <span class="menu-item-price">$78.00</span>
+                            </div>
+                            <p class="menu-item-desc">Charred Maine cold-water lobster tail bathed in spiced Kashmiri saffron butter, served over creamy Acquerello aged parmesan risotto with crisp leeks.</p>
+                            <div class="menu-card-bottom">
+                                <span class="calories-info"><i class="fa-solid fa-fire-flame-curved"></i> 640 kcal</span>
+                                <button class="btn btn-sm btn-gold add-to-cart-btn" data-id="m-7" data-name="Saffron Butter Lobster Tail" data-price="78" data-img="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80">
+                                    <i class="fa-solid fa-plus"></i> Add to Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 8: Desserts -->
+                    <div class="menu-card" data-category="desserts">
+                        <div class="menu-card-image">
+                            <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=700&q=80" alt="Pistachio Kunafa with 24K Gold" loading="lazy">
+                            <span class="menu-badge badge-gold">24K Gold Accent</span>
+                            <span class="dietary-tag"><i class="fa-solid fa-heart"></i> Vegetarian</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-top">
+                                <h3 class="menu-item-title">Imperial Gold Pistachio Kunafa</h3>
+                                <span class="menu-item-price">$26.00</span>
+                            </div>
+                            <p class="menu-item-desc">Crisp kadaifi pastry layered with stretchy Akkawi cheese, Bronte pistachio paste, fragrant orange blossom syrup, and artisan Madagascar vanilla gelato.</p>
+                            <div class="menu-card-bottom">
+                                <span class="calories-info"><i class="fa-solid fa-fire-flame-curved"></i> 480 kcal</span>
+                                <button class="btn btn-sm btn-gold add-to-cart-btn" data-id="m-8" data-name="Imperial Gold Pistachio Kunafa" data-price="26" data-img="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=600&q=80">
+                                    <i class="fa-solid fa-plus"></i> Add to Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 9: Desserts -->
+                    <div class="menu-card" data-category="desserts">
+                        <div class="menu-card-image">
+                            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80" alt="Valrhona Dark Chocolate Sphere" loading="lazy">
+                            <span class="dietary-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Tableside Show</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-top">
+                                <h3 class="menu-item-title">Valrhona Smoked Chocolate Sphere</h3>
+                                <span class="menu-item-price">$29.00</span>
+                            </div>
+                            <p class="menu-item-desc">70% Guanaja chocolate dome filled with raspberry coulis and hazelnut praline, dramatically melted tableside with hot salted caramel espresso.</p>
+                            <div class="menu-card-bottom">
+                                <span class="calories-info"><i class="fa-solid fa-fire-flame-curved"></i> 510 kcal</span>
+                                <button class="btn btn-sm btn-gold add-to-cart-btn" data-id="m-9" data-name="Valrhona Smoked Chocolate Sphere" data-price="29" data-img="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80">
+                                    <i class="fa-solid fa-plus"></i> Add to Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 10: Beverages -->
+                    <div class="menu-card" data-category="beverages">
+                        <div class="menu-card-image">
+                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=700&q=80" alt="Gold Saffron Royale Mocktail" loading="lazy">
+                            <span class="menu-badge badge-signature">Zero-Proof VIP</span>
+                            <span class="dietary-tag"><i class="fa-solid fa-glass-water"></i> Signature</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-top">
+                                <h3 class="menu-item-title">Gold Saffron Royale Elixir</h3>
+                                <span class="menu-item-price">$19.00</span>
+                            </div>
+                            <p class="menu-item-desc">Clarified yuzu juice, organic Iranian saffron syrup, Damascus rose mist, edible gold shimmer, topped with artisanal dry sparkling botanical cider.</p>
+                            <div class="menu-card-bottom">
+                                <span class="calories-info"><i class="fa-solid fa-fire-flame-curved"></i> 140 kcal</span>
+                                <button class="btn btn-sm btn-gold add-to-cart-btn" data-id="m-10" data-name="Gold Saffron Royale Elixir" data-price="19" data-img="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80">
+                                    <i class="fa-solid fa-plus"></i> Add to Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 11: Beverages -->
+                    <div class="menu-card" data-category="beverages">
+                        <div class="menu-card-image">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80" alt="Royal Turkish Cardamom Coffee" loading="lazy">
+                            <span class="dietary-tag"><i class="fa-solid fa-mug-hot"></i> Traditional</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-top">
+                                <h3 class="menu-item-title">Royal Sand-Brewed Turkish Coffee</h3>
+                                <span class="menu-item-price">$14.00</span>
+                            </div>
+                            <p class="menu-item-desc">Slowly brewed on heated sand in traditional copper cezve, lightly fragrant with green cardamom, accompanied by handcrafted royal pistachio Turkish delight.</p>
+                            <div class="menu-card-bottom">
+                                <span class="calories-info"><i class="fa-solid fa-fire-flame-curved"></i> 45 kcal</span>
+                                <button class="btn btn-sm btn-gold add-to-cart-btn" data-id="m-11" data-name="Royal Sand-Brewed Turkish Coffee" data-price="14" data-img="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80">
+                                    <i class="fa-solid fa-plus"></i> Add to Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 12: Specials -->
+                    <div class="menu-card" data-category="specials">
+                        <div class="menu-card-image">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80" alt="Grand Imperial Tasting Board" loading="lazy">
+                            <span class="menu-badge badge-gold">Tasting Flight</span>
+                            <span class="dietary-tag"><i class="fa-solid fa-crown"></i> 4 Courses</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <div class="menu-card-top">
+                                <h3 class="menu-item-title">Grand Imperial Tasting Flight</h3>
+                                <span class="menu-item-price">$145.00</span>
+                            </div>
+                            <p class="menu-item-desc">A progressive 4-course culinary odyssey featuring Caviar mezze, Smoked A5 Wagyu Medallion, Saffron Seabass, and the Golden Kunafa finale.</p>
+                            <div class="menu-card-bottom">
+                                <span class="calories-info"><i class="fa-solid fa-fire-flame-curved"></i> Per Guest</span>
+                                <button class="btn btn-sm btn-gold add-to-cart-btn" data-id="m-12" data-name="Grand Imperial Tasting Flight" data-price="145" data-img="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80">
+                                    <i class="fa-solid fa-plus"></i> Add to Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Bottom CTA Banner -->
+                <div class="menu-ordering-banner">
+                    <div class="ordering-banner-content">
+                        <div class="banner-badge"><i class="fa-solid fa-truck-fast text-gold"></i> Exclusive Concierge Delivery & Express Pickup</div>
+                        <h3>Craving HADI's Cuisine in the Comfort of Your Home?</h3>
+                        <p>Order directly online or coordinate bespoke catering with our executive culinary team via WhatsApp.</p>
+                    </div>
+                    <div class="ordering-banner-actions">
+                        <button id="open-cart-banner-btn" class="btn btn-gold">
+                            <i class="fa-solid fa-bag-shopping"></i> View Cart & Checkout
+                        </button>
+                        <a href="https://wa.me/12345678900?text=Hello%20HADI%20Restaurant,%20I%20would%20like%20to%20place%20a%20custom%20delivery%20order." target="_blank" rel="noopener noreferrer" class="btn btn-outline-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> Order via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- THE LUXURY EXPERIENCE SECTION -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-heading">IMMERSIVE HOSPITALITY</span>
+                    <h2 class="section-title">The Royal <span class="gold-gradient-text">Experience</span></h2>
+                    <div class="gold-divider">
+                        <span class="line"></span>
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                        <span class="line"></span>
+                    </div>
+                    <p class="section-intro">
+                        Step into a sanctuary where dim crystal chandeliers, ambient oud melodies, and bespoke golden table service create an indelible sensory reverie.
+                    </p>
+                </div>
+
+                <div class="experience-cards-grid">
+                    <div class="exp-card">
+                        <div class="exp-icon-box">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3>VIP Golden Salons</h3>
+                        <p>Private, sound-insulated salons tailored for high-profile business dinners, intimate family celebrations, and diplomatic engagements with dedicated butler service.</p>
+                        <ul class="exp-features">
+                            <li><i class="fa-solid fa-check text-gold"></i> Private entrance & valet</li>
+                            <li><i class="fa-solid fa-check text-gold"></i> Custom 7-course tasting menu</li>
+                            <li><i class="fa-solid fa-check text-gold"></i> Dedicated master sommelier / mixologist</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-card highlight-card">
+                        <div class="exp-badge">Most Coveted</div>
+                        <div class="exp-icon-box">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <h3>Tableside Fire Theater</h3>
+                        <p>Witness culinary alchemy unfolding right before your eyes — from live carving of 24K Gold Tomahawks to fragrant rosemary smoke infusing your dining table.</p>
+                        <ul class="exp-features">
+                            <li><i class="fa-solid fa-check text-gold"></i> Live charcoal flame finishing</li>
+                            <li><i class="fa-solid fa-check text-gold"></i> Nitrogen infused mocktail creations</li>
+                            <li><i class="fa-solid fa-check text-gold"></i> Tableside dessert melting art</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-card">
+                        <div class="exp-icon-box">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <h3>Live Ambient Oud & Jazz</h3>
+                        <p>Every Thursday, Friday, and Saturday evening features delicate acoustic live oud, Spanish flamenco strings, and soft jazz that complement the conversation seamlessly.</p>
+                        <ul class="exp-features">
+                            <li><i class="fa-solid fa-check text-gold"></i> World-class live instrumentalists</li>
+                            <li><i class="fa-solid fa-check text-gold"></i> Curated acoustic volume balance</li>
+                            <li><i class="fa-solid fa-check text-gold"></i> Weekend evening sessions (8 PM - 11 PM)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION (WITH LIGHTBOX) -->
+        <section id="gallery" class="gallery-section section-padding bg-darker">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-heading">VISUAL SPLENDOR</span>
+                    <h2 class="section-title">The Culinary <span class="gold-gradient-text">Gallery</span></h2>
+                    <div class="gold-divider">
+                        <span class="line"></span>
+                        <i class="fa-solid fa-camera-retro"></i>
+                        <span class="line"></span>
+                    </div>
+                    <p class="section-intro">
+                        A preview of the artistry crafted by our culinary team and the breathtaking ambiance awaiting your arrival. Click any photo to view in high definition.
+                    </p>
+                </div>
+
+                <!-- Gallery Category Filters -->
+                <div class="gallery-filter-tabs">
+                    <button class="g-filter-btn active" data-gfilter="all">All Visuals</button>
+                    <button class="g-filter-btn" data-gfilter="dishes">Signature Dishes</button>
+                    <button class="g-filter-btn" data-gfilter="interior">Interior & Ambience</button>
+                    <button class="g-filter-btn" data-gfilter="vip">VIP Salons</button>
+                    <button class="g-filter-btn" data-gfilter="drinks">Beverages & Mocktails</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- 1 -->
+                    <div class="gallery-item" data-group="dishes" data-caption="Prime Wagyu Ribeye M9+ with Himalayan Truffle Glaze">
+                        <div class="gallery-item-inner">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Prime Wagyu Ribeye" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <h4>Prime Wagyu Ribeye M9+</h4>
+                                <span>Signature Dishes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="gallery-item" data-group="interior" data-caption="The Grand Dining Hall with Golden Crystal Chandeliers">
+                        <div class="gallery-item-inner">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="HADI Grand Dining Room" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <h4>Grand Dining Hall</h4>
+                                <span>Interior & Ambience</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="gallery-item" data-group="dishes" data-caption="Maine Lobster Tail with Saffron Acquerello Risotto">
+                        <div class="gallery-item-inner">
+                            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=900&q=80" alt="Saffron Lobster Risotto" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <h4>Saffron Lobster Risotto</h4>
+                                <span>Signature Dishes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="gallery-item" data-group="vip" data-caption="Private Royal Suite with Dedicated Concierge & Tableware">
+                        <div class="gallery-item-inner">
+                            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=900&q=80" alt="VIP Private Salon at HADI" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <h4>Imperial VIP Salon</h4>
+                                <span>VIP Salons</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="gallery-item" data-group="drinks" data-caption="Gold Shimmer Saffron Royale Botanical Mocktail">
+                        <div class="gallery-item-inner">
+                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=900&q=80" alt="Gold Saffron Royale Mocktail" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <h4>Gold Saffron Mocktail</h4>
+                                <span>Beverages & Mocktails</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="gallery-item" data-group="dishes" data-caption="24K Gold Pistachio Kunafa with Turkish Gelato">
+                        <div class="gallery-item-inner">
+                            <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=900&q=80" alt="Pistachio Kunafa" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <h4>Gold Pistachio Kunafa</h4>
+                                <span>Signature Desserts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REVIEWS & TESTIMONIALS SECTION -->
+        <section class="testimonials-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-heading">CRITICAL ACCLAIM & PRAISE</span>
+                    <h2 class="section-title">Words From Our <span class="gold-gradient-text">Guests</span></h2>
+                    <div class="gold-divider">
+                        <span class="line"></span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="line"></span>
+                    </div>
+                </div>
+
+                <div class="reviews-slider">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "The 24K Gold Tomahawk at HADI is not just culinary perfection; it is pure performance art. The Wagyu melted effortlessly, and the saffron lobster risotto was heavenly. The VIP salon treatment was truly royal."
+                        </p>
+                        <div class="reviewer-meta">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Reviewer Tariq Mansoor" class="reviewer-avatar">
+                            <div>
+                                <h4 class="reviewer-name">Tariq Mansoor</h4>
+                                <span class="reviewer-role">Luxury Gastronomy Critic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Booking our anniversary table via their WhatsApp service was effortless. We arrived to customized gold calligraphy menu cards and exceptional hospitality. Hands down the finest dining in the city."
+                        </p>
+                        <div class="reviewer-meta">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Reviewer Elena Rostova" class="reviewer-avatar">
+                            <div>
+                                <h4 class="reviewer-name">Elena Rostova</h4>
+                                <span class="reviewer-role">Connoisseur & Private Collector</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Finding 100% authentic Halal fine dining executed with this level of French precision and royal Middle Eastern soul is rare. The dessert kunafa with edible gold is unmatched!"
+                        </p>
+                        <div class="reviewer-meta">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Reviewer Dr. Omar Al-Zahrani" class="reviewer-avatar">
+                            <div>
+                                <h4 class="reviewer-name">Dr. Omar Al-Zahrani</h4>
+                                <span class="reviewer-role">Frequent VIP Diner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TABLE RESERVATION & CONTACT SECTION -->
+        <section id="reservation" class="reservation-section section-padding bg-darker">
+            <div class="container">
+                <div class="reservation-wrapper">
+                    <div class="reservation-grid">
+                        
+                        <!-- Reservation Form -->
+                        <div class="reservation-form-box">
+                            <div class="box-badge">
+                                <i class="fa-solid fa-calendar-check text-gold"></i>
+                                <span>ONLINE & WHATSAPP RESERVATION</span>
+                            </div>
+                            <h2 class="form-title">Reserve Your <span class="gold-gradient-text">Table</span></h2>
+                            <p class="form-subtitle">
+                                Confirm directly online or connect seamlessly with our WhatsApp Maitre D' for instant VIP table allocations.
+                            </p>
+
+                            <form id="reservation-form" class="reservation-form" novalidate>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="res-name"><i class="fa-solid fa-user text-gold"></i> Full Name *</label>
+                                        <input type="text" id="res-name" class="form-control" placeholder="e.g. Lord Alexander Wright" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="res-phone"><i class="fa-solid fa-phone text-gold"></i> WhatsApp / Phone *</label>
+                                        <input type="tel" id="res-phone" class="form-control" placeholder="+1 (234) 567-8900" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="res-date"><i class="fa-solid fa-calendar-days text-gold"></i> Preferred Date *</label>
+                                        <input type="date" id="res-date" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="res-time"><i class="fa-solid fa-clock text-gold"></i> Dining Time *</label>
+                                        <select id="res-time" class="form-control" required>
+                                            <option value="" disabled selected>Select dining hour</option>
+                                            <option value="12:30 PM">12:30 PM (Lunch Service)</option>
+                                            <option value="01:30 PM">01:30 PM (Lunch Service)</option>
+                                            <option value="03:00 PM">03:00 PM (Afternoon Lounge)</option>
+                                            <option value="06:00 PM">06:00 PM (Early Dinner)</option>
+                                            <option value="07:30 PM">07:30 PM (Prime Dinner)</option>
+                                            <option value="08:30 PM">08:30 PM (Prime Dinner)</option>
+                                            <option value="09:45 PM">09:45 PM (Late Evening)</option>
+                                            <option value="10:30 PM">10:30 PM (Midnight Soirée)</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="res-guests"><i class="fa-solid fa-user-group text-gold"></i> Party Size *</label>
+                                        <select id="res-guests" class="form-control" required>
+                                            <option value="1 Guest">1 Guest (Solo Fine Dining)</option>
+                                            <option value="2 Guests" selected>2 Guests (Romantic Dinner)</option>
+                                            <option value="3 Guests">3 Guests</option>
+                                            <option value="4 Guests">4 Guests (Executive Table)</option>
+                                            <option value="6 Guests">6 Guests (Celebration Table)</option>
+                                            <option value="8+ Guests (VIP Salon)">8+ Guests (VIP Salon Request)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="res-area"><i class="fa-solid fa-couch text-gold"></i> Seating Area</label>
+                                        <select id="res-area" class="form-control">
+                                            <option value="Grand Dining Hall" selected>Grand Dining Hall</option>
+                                            <option value="Imperial VIP Gold Salon">Imperial VIP Gold Salon</option>
+                                            <option value="Romantic Candlelight Booth">Romantic Candlelight Booth</option>
+                                            <option value="Chef's Counterfront">Chef's Interactive Counter</option>
+                                            <option value="Outdoor Palm Terrace">Outdoor Palm Terrace</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="res-notes"><i class="fa-solid fa-comment-dots text-gold"></i> Dietary Preferences or Special Occasion</label>
+                                    <textarea id="res-notes" class="form-control" rows="2" placeholder="Anniversary, birthday, business conference, gluten allergies, high-chair requests..."></textarea>
+                                </div>
+
+                                <div class="form-submit-buttons">
+                                    <!-- Direct Web Form Submit -->
+                                    <button type="submit" class="btn btn-gold btn-lg btn-block">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <span>Confirm Reservation</span>
+                                    </button>
+
+                                    <!-- Direct WhatsApp Booking Button -->
+                                    <button type="button" id="whatsapp-reserve-btn" class="btn btn-outline-whatsapp btn-lg btn-block">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                        <span>Reserve Directly via WhatsApp</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Contact & Location Info Card -->
+                        <div id="contact" class="reservation-info-box">
+                            <div class="info-card-header">
+                                <span class="sub-heading">VISIT HADI RESTAURANT</span>
+                                <h3 class="info-card-title">Hospitality & Concierge</h3>
+                                <p class="info-card-text">We are situated in the center of the metropolitan luxury district, welcoming local and international connoisseurs.</p>
+                            </div>
+
+                            <div class="info-items-list">
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div>
+                                        <strong>Location & Address</strong>
+                                        <p>742 Royal Palm Boulevard, Downtown Luxury Promenade, Suite 100</p>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                                    <div>
+                                        <strong>Telephone Inquiries</strong>
+                                        <p><a href="tel:+12345678900" class="hover-gold">+1 (234) 567-8900</a></p>
+                                        <p><a href="tel:+12345678901" class="hover-gold">+1 (234) 567-8901 (VIP Line)</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                    <div>
+                                        <strong>WhatsApp VIP Desk</strong>
+                                        <p><a href="https://wa.me/12345678900" target="_blank" rel="noopener noreferrer" class="hover-gold">+1 (234) 567-8900 (Instant Chat)</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                    <div>
+                                        <strong>Private Events & Email</strong>
+                                        <p><a href="mailto:concierge@hadirestaurant.com" class="hover-gold">concierge@hadirestaurant.com</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+                                    <div>
+                                        <strong>Hours of Service</strong>
+                                        <p><strong>Lunch:</strong> 12:00 PM – 04:30 PM (Daily)</p>
+                                        <p><strong>Dinner:</strong> 06:00 PM – 12:00 AM (Midnight)</p>
+                                        <p><span class="text-gold">Valet Parking:</span> Complimentary at entrance</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Styled Interactive Map Preview Card -->
+                            <div class="map-preview-card">
+                                <div class="map-card-inner">
+                                    <div class="map-pin-pulse">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="map-details">
+                                        <strong>HADI Royal Promenade</strong>
+                                        <span>Click to open in Google Maps</span>
+                                    </div>
+                                </div>
+                                <a href="https://maps.google.com/?q=742+Royal+Palm+Boulevard" target="_blank" rel="noopener noreferrer" class="map-link-btn" aria-label="Open location in Google Maps">
+                                    <span>Get Driving Directions</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER / VIP CLUB -->
+        <section class="vip-club-section">
+            <div class="container">
+                <div class="vip-club-card">
+                    <div class="vip-club-content">
+                        <span class="sub-heading text-gold">THE HADI CONNOISSEUR CIRCLE</span>
+                        <h3>Receive Invitations to Exclusive Tasting Menus & Private Soirées</h3>
+                        <p>Members of our Connoisseur Circle receive priority reservation allocations and invitations to seasonal chef tasting previews.</p>
+                    </div>
+                    <form id="newsletter-form" class="vip-club-form">
+                        <div class="input-with-button">
+                            <input type="email" id="newsletter-email" placeholder="Enter your private email address" required>
+                            <button type="submit" class="btn btn-gold">
+                                <span>Join the Circle</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-col brand-col">
+                    <div class="brand-logo mb-3">
+                        <div class="logo-symbol">
+                            <span class="gold-monogram">H</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="brand-name">HADI</span>
+                            <span class="brand-subtitle">FINE DINING & LOUNGE</span>
+                        </div>
+                    </div>
+                    <p class="footer-text">
+                        A pinnacle of gastronomic art in the heart of the city. We celebrate the majesty of imperial flavours, dry-aged perfection, and unforgettable moments.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="HADI Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="HADI Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://tripadvisor.com" target="_blank" rel="noopener noreferrer" aria-label="HADI TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+                        <a href="https://wa.me/12345678900" target="_blank" rel="noopener noreferrer" aria-label="HADI WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Navigation Links -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Our Heritage</a></li>
+                        <li><a href="#menu">The Culinary Menu</a></li>
+                        <li><a href="#experience">VIP Experience</a></li>
+                        <li><a href="#gallery">Visual Gallery</a></li>
+                        <li><a href="#reservation">Table Reservation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Culinary Highlights -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Signatures</h4>
+                    <ul class="footer-links">
+                        <li><a href="#menu">Royal 24K Gold Tomahawk</a></li>
+                        <li><a href="#menu">Imperial Wagyu Ribeye M9+</a></li>
+                        <li><a href="#menu">Saffron Butter Lobster Tail</a></li>
+                        <li><a href="#menu">12-Hour Braised Lamb Shank</a></li>
+                        <li><a href="#menu">Imperial Gold Kunafa</a></li>
+                        <li><a href="#menu">Gold Saffron Royale Elixir</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Visit & Hours -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <p class="footer-hours-row">
+                        <span>Monday – Thursday:</span>
+                        <strong>12:00 PM – 11:30 PM</strong>
+                    </p>
+                    <p class="footer-hours-row">
+                        <span>Friday – Sunday:</span>
+                        <strong>12:00 PM – 12:30 AM</strong>
+                    </p>
+                    <p class="footer-hours-row">
+                        <span>Executive Lunch:</span>
+                        <strong>12:00 PM – 04:00 PM</strong>
+                    </p>
+                    <div class="halal-certified-badge">
+                        <i class="fa-solid fa-shield-halved text-gold"></i>
+                        <span>100% Certified Prime Halal</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2026 HADI Restaurant & Lounge. All rights reserved. Crafted for royal dining.
+                </div>
+                <div class="footer-legal">
+                    <a href="#home">Privacy Policy</a>
+                    <span class="divider">•</span>
+                    <a href="#home">Terms of Service</a>
+                    <span class="divider">•</span>
+                    <a href="#reservation">VIP Concierge</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ONLINE FOOD ORDERING CART DRAWER -->
+    <div id="cart-drawer" class="cart-drawer" aria-labelledby="cart-heading" role="dialog" aria-modal="true">
+        <div class="cart-drawer-header">
+            <div class="cart-title-wrapper">
+                <i class="fa-solid fa-bag-shopping text-gold"></i>
+                <h3 id="cart-heading">Your Order Summary</h3>
+            </div>
+            <button id="close-cart-btn" class="close-cart-btn" aria-label="Close Order Cart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="cart-drawer-body">
+            <!-- Order Type Toggle: Delivery or Pickup -->
+            <div class="order-type-switch">
+                <label class="switch-option active" data-type="pickup">
+                    <input type="radio" name="orderType" value="pickup" checked>
+                    <i class="fa-solid fa-store"></i> Express Pickup
+                </label>
+                <label class="switch-option" data-type="delivery">
+                    <input type="radio" name="orderType" value="delivery">
+                    <i class="fa-solid fa-truck"></i> Concierge Delivery
+                </label>
+            </div>
+
+            <!-- Empty Cart State -->
+            <div id="cart-empty-state" class="cart-empty-state">
+                <i class="fa-solid fa-utensils text-gold empty-icon"></i>
+                <h4>Your Bag is Currently Empty</h4>
+                <p>Explore our royal menu and add your favorite delicacies to start your order.</p>
+                <a href="#menu" class="btn btn-outline-gold btn-sm" id="cart-explore-menu-btn">Browse Menu</a>
+            </div>
+
+            <!-- Items List -->
+            <div id="cart-items-list" class="cart-items-list">
+                <!-- Dynamically populated via JS -->
+            </div>
+
+            <!-- Order Notes -->
+            <div id="cart-notes-container" class="cart-notes-container d-none">
+                <label for="order-special-instructions"><i class="fa-solid fa-pencil text-gold"></i> Special Notes / Allergies:</label>
+                <textarea id="order-special-instructions" class="form-control" rows="2" placeholder="e.g. Medium rare steak, extra spicy, no cutlery needed..."></textarea>
+            </div>
+        </div>
+
+        <div id="cart-drawer-footer" class="cart-drawer-footer d-none">
+            <div class="cart-financials">
+                <div class="calc-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">$0.00</span>
+                </div>
+                <div class="calc-row">
+                    <span id="cart-fee-label">Estimated Service / Tax (5%)</span>
+                    <span id="cart-tax">$0.00</span>
+                </div>
+                <div class="calc-row total-row">
+                    <span>Total Amount</span>
+                    <span id="cart-total" class="gold-gradient-text">$0.00</span>
+                </div>
+            </div>
+
+            <div class="cart-actions">
+                <!-- WhatsApp Checkout Button -->
+                <button id="whatsapp-checkout-btn" class="btn btn-outline-whatsapp btn-block mb-2">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>Order via WhatsApp Direct</span>
+                </button>
+
+                <!-- Instant Web Order Button -->
+                <button id="place-instant-order-btn" class="btn btn-gold btn-block">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>Place Order Instantly</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="cart-backdrop" class="cart-backdrop"></div>
+
+    <!-- GALLERY LIGHTBOX MODAL -->
+    <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <button id="lightbox-close-btn" class="lightbox-close-btn" aria-label="Close Lightbox">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button id="lightbox-prev-btn" class="lightbox-nav-btn prev-btn" aria-label="Previous image">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id="lightbox-next-btn" class="lightbox-nav-btn next-btn" aria-label="Next image">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="Enlarged view">
+            <p id="lightbox-caption" class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- FLOATING WHATSAPP BUTTON (ALWAYS ACCESSIBLE) -->
+    <a href="https://wa.me/12345678900?text=Hello%20HADI%20Restaurant,%20I%20would%20like%20to%20make%20a%20table%20reservation%20or%20inquire%20about%20the%20menu." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Chat with HADI Restaurant on WhatsApp" title="WhatsApp VIP Reservations">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="floating-whatsapp-tooltip">Chat with VIP Concierge</span>
+    </a>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="back-to-top-btn" class="back-to-top-btn" aria-label="Scroll back to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
